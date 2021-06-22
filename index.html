@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Portfolio Website</title>
 </head>
 <body>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav_logo">Abhijeet</a>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list grid">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link">
+                        <a href="#home" class="nav_link active-link">
                             <i class="uil uil-estate nav_icon"></i>Home
                         </a>
                     </li>
@@ -27,11 +31,6 @@
                     <li class="nav_item">
                         <a href="#skills" class="nav_link">
                             <i class="uil uil-file-plus-alt nav_icon"></i>Skills
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#services" class="nav_link">
-                            <i class="uil uil-briefcase-alt nav_icon"></i>Services
                         </a>
                     </li>
                     <li class="nav_item">
@@ -48,12 +47,285 @@
                 <i class="uil uil-times nav_close" id=nav-close></i>
             </div>
             <div class="nav_btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav_toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
             </div>
         </nav>
     </header>
-    <script src="main.js"></script>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                    <a href="https://www.linkedin.com/in/abhijeet-sinha-17438b1b1/" target="_blank" class="home_social-icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://www.instagram.com/abhijeet_sinha264/" target="_blank" class="home_social-icon">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://github.com/abhijeet141" target="_blank" class="home_social-icon">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    </div>
+                    
+                <div class="home_img">
+                   <img class="home_image" src="image/about1.jpg" alt="">
+                </div>
+                <div class="home_data">
+                    <h1 class="home_title">
+                        Hello, I'm Abhijeet
+                    </h1>
+                    <h3 class="home_subtitle">
+                        FullStack Web Development Enthusiast
+                    </h3>
+                    <p class="home_description">
+                        I have a good knowledge of Html, Css and Bootstrap and enhancing my knowledge more deeper in Javascript.
+                    </p>
+                    <a href="#contact" class="button button--flex">
+                       Contact Me <i class="uil uil-message button_icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="about section" id="about">
+            <h2 class="section_title">
+                About Me
+            </h2>
+            <span class="section_subtitle">
+                My Introduction
+            </span>
+            <div class="about_container container grid">
+                <img src="image/about1.jpg" alt="" class="about_img">
+                <div class="about_data">
+                    <p class="about_description">
+                        I am a FullStack Web Development Enthusiast enhancing my knowledge more deeper in Javascript.
+                    </p>
+                    <div class="about_buttons">
+                        <a download="" href="pdf/cv.pdf" class="button button--flex">
+                            Download CV<i class="uil uil-download-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills section" id="skills">
+            <h2 class="section_title">
+                Skills
+            </h2>
+            <span class="section_subtitle">
+                My Technical Level
+            </span>
+            <div class="skills_container container grid">
+                <div>
+                    <div class="skills_content">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">
+                                        HTML
+                                    </h3>
+                                    <span class="skills_number">
+                                        90%
+                                    </span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_html"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">
+                                        CSS
+                                    </h3>
+                                    <span class="skills_number">
+                                        80%
+                                    </span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_css"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">
+                                        Bootstrap
+                                    </h3>
+                                    <span class="skills_number">
+                                        70%
+                                    </span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_bootstrap"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">
+                                        C++
+                                    </h3>
+                                    <span class="skills_number">
+                                        60%
+                                    </span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_c"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">
+                                        JavaScript
+                                    </h3>
+                                    <span class="skills_number">
+                                        40%
+                                    </span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_js"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">My Projects</span>
+            <div class="portfolio_container container swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                   <div class="portfolio_content grid swiper-slide">
+                       <img src="image/portfolio1.jpg" alt="" class="portfolio_img">
+                       <div class="portfolio_data">
+                           <h3 class="portfolio_title">
+                            Lorem Ipsum
+                           </h3>
+                           <p class="portfolio_description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum maximus lacinia. Duis aliquet ornare neque et sodales.
+                           </p>
+                           <a href="#" class="button button--flex button--small portfolio_button">
+                               Demo
+                               <i class="uil uil-arrow-right"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <div class="portfolio_content grid swiper-slide">
+                    <img src="image/portfolio2.jpg" alt="" class="portfolio_img">
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">
+                         Lorem Ipsum
+                        </h3>
+                        <p class="portfolio_description">
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum maximus lacinia. Duis aliquet ornare neque et sodales.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio_button">
+                            Demo
+                            <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio_content grid swiper-slide">
+                    <img src="image/portfolio3.jpg" alt="" class="portfolio_img">
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">
+                         Lorem Ipsum
+                        </h3>
+                        <p class="portfolio_description">
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum maximus lacinia. Duis aliquet ornare neque et sodales.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio_button">
+                            Demo
+                            <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+                        <h3 class="contact_title">Email Me</h3>
+                        <span class="contact_subtitle">abhijeetsinha.smith@gmail.com</span>
+                    </div>
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>
+                        <h3 class="contact_title">Location</h3>
+                        <span class="contact_subtitle">Varanasi</span>
+                    </div>
+                </div>
+                <form action="" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                                <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                                <input type="text" class="contact_input">
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Message</label>
+                           <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
+                    <div>
+                        <a href="" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button_icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Abhijeet</h1>
+                        <span class="footer_subtitle">FullStack Web Development Enthusiast</span>
+                    </div>
+                    <ul class="footer_links">
+                        <li>
+                            <a href="" class="footer_link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer_link">Contact Me</a>
+                        </li>
+                    </ul>
+                    <div class="footer_socials">
+                        <a href="https://www.linkedin.com/in/abhijeet-sinha-17438b1b1/" target="_blank" class="footer_social">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                                <a href="https://www.instagram.com/abhijeet_sinha264/" target="_blank" class="footer_social">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                                <a href="https://github.com/abhijeet141" target="_blank" class="footer_social">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
