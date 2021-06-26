@@ -1,32 +1,19 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
-
 particlesJS('particles-js',
-  
+
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 7,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 100 /*change*/
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": ["#ffffff","#c1a1d3","#312c51","#adeecf","#ef4f4f","#ffd66b"]
       },
       "shape": {
-        "type": "circle",
+          "type": ["circle"], /*change*/
         "stroke": {
           "width": 0,
           "color": "#000000"
@@ -42,26 +29,26 @@ particlesJS('particles-js',
       },
       "opacity": {
         "value": 0.5,
-        "random": false,
+          "random": true, /*change*/
         "anim": {
-          "enable": false,
+            "enable": true, /*change*/
           "speed": 1,
           "opacity_min": 0.1,
           "sync": false
         }
       },
       "size": {
-        "value": 5,
+          "value": 15, /*change*/
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
+            "speed": 70, /*change*/
+            "size_min": 10, /*change*/
           "sync": false
         }
       },
       "line_linked": {
-        "enable": true,
+          "enable": false, /*change*/
         "distance": 150,
         "color": "#ffffff",
         "opacity": 0.4,
@@ -69,7 +56,7 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
-        "speed": 6,
+          "speed": 2, /*change*/
         "direction": "none",
         "random": false,
         "straight": false,
@@ -85,7 +72,7 @@ particlesJS('particles-js',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+            "enable": false, /*change*/
           "mode": "repulse"
         },
         "onclick": {
@@ -130,4 +117,4 @@ particlesJS('particles-js',
     }
   }
 
-);
+); 
