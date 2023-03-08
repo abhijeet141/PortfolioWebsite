@@ -1,3 +1,3 @@
 # Portfolio-Website
 
-https://abhijeet141.github.io/PortfolioWebsite/
+https://abhijeet-portfolio-website.netlify.app/
